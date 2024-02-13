@@ -1,6 +1,7 @@
-function continueGame()
+function start()
  {
-
+alert("hello")
+   
   
 
   

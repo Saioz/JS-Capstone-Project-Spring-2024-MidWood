@@ -1,24 +1,58 @@
 html {
   height: 100%;
   width: 100%;
+  .lines1 {
+    border-width: 10px; /* thickens the <hr> */ 
+    margin-top:1%; 
+              }    /*  working   */
+  .lines2 {
+    border-width: 10px; /* thickens the <hr> */ 
+    margin-top:1%; 
+  }    /*  working   */
+  .lines3 {
+    border-width: 10px; /* thickens the <hr> */ 
+    margin-top:50%; 
+  }    /*  working   */
 
+
+
+
+
+
+  
+  .box {
+  
+    width: 300px;
+    border: 10px solid grey;
+    padding: 15px;
+    margin: auto;
+  }       /*  working   */
+
+
+
+
+
+
+
+  
 .start {
+margin-left:45%;
+padding: 15px 25px;
+font-size: 60px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #dda175;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
 
-  height:100px;
-  width:40px;
-
-
-  }
-
-
-
-
-  
+  }       /*  working   */
+.start:hover {background-color: #ce7738}  /*  working   */
+.start:active {
+background-color: #ce7738;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+} /*  working   */
 }
-}
-
-
-
-
-  
-
