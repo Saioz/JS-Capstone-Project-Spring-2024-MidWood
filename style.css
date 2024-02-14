@@ -11,16 +11,15 @@ html {
   }    /*  working   */
   .lines3 {
     border-width: 10px; /* thickens the <hr> */ 
-    margin-top:50%; 
+    position:absolute;
+    top:100%;
+   
+
   }    /*  working   */
 
 
-
-
-
-
   
-  .box {
+.box {
   
     width: 300px;
     border: 10px solid grey;
@@ -29,16 +28,39 @@ html {
   }       /*  working   */
 
 
+.start {
+margin-left:32%;
+padding: 20px 35px;
+font-size:100px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #df9c6d;
+border: none;
+border-radius: 15px;
+box-shadow: 0 15px #999;
 
+  }   
+.start:hover {background-color: #ce7738} 
+.start:active {
+background-color: #ce7738;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+} 
+.money {
+position: absolute;
+top:30%;
+left:45%;
+}
 
-
-
+/*   working     */
 
   
-.start {
-margin-left:45%;
-padding: 15px 25px;
-font-size: 60px;
+.leave {
+margin-left:3%;
+padding: 20px 35px;
+font-size:100px;
 text-align: center;
 cursor: pointer;
 outline: none;
@@ -46,13 +68,12 @@ color: #fff;
 background-color: #dda175;
 border: none;
 border-radius: 15px;
-box-shadow: 0 9px #999;
+box-shadow: 0 15px #999;
+}   
 
-  }       /*  working   */
-.start:hover {background-color: #ce7738}  /*  working   */
-.start:active {
+.leave:hover {background-color: #ce7738} 
+.leave:active {
 background-color: #ce7738;
 box-shadow: 0 5px #666;
 transform: translateY(4px);
-} /*  working   */
 }
