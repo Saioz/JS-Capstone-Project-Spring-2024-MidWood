@@ -57,15 +57,20 @@ const textNodes = [
   },
   {
     id: 2,
-    text: 'Your curiousity is piqued by the potential for unfathomable wealth, so you venture forward into the cave and come across a burly man groaning on the floor asking for some money, this is strange to you but you converse. The man has an offer for you.',
+    text: 'Your curiousity is piqued by the potential for unfathomable wealth, so you venture forward into the cave and come across a man groaning on the floor. He asks for some money, this is strange to you but you both end up talking. The man has some offers for you.',
     options: [
       {
         text: 'buy a small swiss pocket knife',
         requiredState: (currentState) => currentState.haveMoney,
         setState: { haveMoney: false, sword: true },
         nextText: 3
+        
       },
-      
+      {
+        text: 'Run towards the man and throw yourself at him, in an attempt to rob him for what he has',
+        nextText: 14
+
+      },
       {
         text: 'Ignore the man',
         nextText: 3
@@ -74,7 +79,7 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'After leaving the man and wandering you begin to feel tired, you stumble around and find yourself upon a faint light in the dark.',
+    text: 'After leaving the man and wandering you begin to feel tired, you stumble around and find yourself upon a faint light that is followed by some terrible scratching noises.',
     options: [
       {
         text: 'Explore the light',
@@ -89,7 +94,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'You are so tired that you fall asleep while walking toward the light and are killed by a spider in your sleep.',
+    text: 'You happened upon the lair of a giant spider! It stalks you and murders you the same night.',
     options: [
       {
         text: 'Restart',
@@ -102,7 +107,7 @@ const textNodes = [
     text: 'You are well rested and decide to continue exploring the light, there seems to be something or someone there',
     options: [
       {
-        text: 'continue along and look for whatever is there',
+        text: 'continue along and look for whatever or whoever is there',
         nextText: 13
       },
       {
@@ -181,7 +186,17 @@ const textNodes = [
       }
     ]
   },
-  
+  {
+    id: 14,
+    text: 'Honestly you are an evil person..(Why would you try that?) *the man stabs you with his knife and you bleed out*',
+    options: [
+      {
+        text: 'Restart (This time without murdering a random dude maybe?)',
+        nextText: -1
+      },
+    
+    ]
+  },
   {
     id: 11,
     text: 'You hit the eye of the monster and it groans in pain. It cries out and shrieks for a minute... Then it dies and you escape with your life.',
